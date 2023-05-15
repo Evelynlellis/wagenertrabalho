@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Wagner Cesar Vieira">
-    <title>Contato</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulario de contato</title>
 </head>
-
-<header>
-    <figure>
-        <a href="../index.html"><img src="../images/logo.png" alt="Sumiu" title="Este é o meu logo"></a>
-    </figure>
-
-    <section id="Busca">
-        <img src="../images/search3.png" alt="Sumiu"/>
-        <input type="text" id="txtBusca" placeholder="Buscar..."/>
-        <button id="btnBusca">Buscar</button>
-    </section>
-
-    <nav>
-        <a href="../index.html"><button>Home</button></a>
-        <button>Minha vida</button>
-        <button>How-to</button>
-        <button>Contato</button>
-    </nav>
-</header>
 <body>
-    <main class="container">
-        <section class="post">
+    <main>
+        <form action="teste.html">
+            Nome
+            <input type="Text" id="nome" name="nome"
+            required placeholder="digite seu nome completo">
+        </br>
+            data de nacimento 
+            <input type="date" id="nascimento" name="nascimento" >
+    </br>
+            <input type="submit" id="botao" name="botao"
+            volue="Enviar">
+            <input type="reset" id="botao2" name="botao2"
+            volue="limpar">
             
-        </section>        
-
-        <section class="post">
-            
-        </section>
-
-        <section class="post">
-            
-        </section>
+            Email
+            <input type="email" id="email" nome="email"
+            required placeholder="informe seu e-mail">
+            <br>
         
-    </main>
-</body>
+Sexo 
+</br>
+            feminino
+            <input type="radio" id="feminino" name="sexo">
 
-<footer>
-    <p>Made by Wagner Cesar Vieira &copy;</p>
-</footer>
+</br>
+            masculino
+            <input type="radio" id="masculino" name="sexo">
+</br>
+
+            <input type="tel" id="telefone" name="telefone"
+          pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="digite seu telefone">
+</br>
+            Altura
+            <input type="number" id="altura" name="altura"
+            placeholder="informa sua altura">
+</br>
+       Escolha seu prato favorito
+
+    <select id="prato" name="prarp">
+        <option volue="escolha">Escolha</option> 
+        <option volue="las">lasanha</option>
+        <option volue="churrasco">churrasco</option>
+        <option volue="SP"> São Paulo</option>
+    </select>
+
+        </form>
+    </main>
+    
+</body>
 </html>
